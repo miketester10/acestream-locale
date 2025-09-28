@@ -1,0 +1,11 @@
+services:
+  acestream:
+    image: vstavrinov/acestream-service
+    container_name: Acestream
+    restart: unless-stopped
+    environment:
+      - SCHEME=http
+      - ENTRY=4002
+      - PORT=80
+    ports:
+      - "4002:80"
