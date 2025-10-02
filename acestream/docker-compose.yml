@@ -5,3 +5,4 @@ services:
     restart: unless-stopped
     ports:
       - "6878:6878"
+      - "8621:8621/udp"
